@@ -17,7 +17,7 @@ use Magento\Framework\Webapi\Rest\Request;
 use Monolog\Logger;
 use Websolute\TransporterActivity\Api\ActivityRepositoryInterface;
 use Websolute\TransporterActivity\Api\Data\ActivityInterface;
-use Websolute\TransporterAmqp\Api\DownloaderWaitMeBeforeContinueInterface;
+use Websolute\TransporterBase\Api\DownloaderInterface;
 use Websolute\TransporterBase\Exception\TransporterException;
 use Websolute\TransporterEntity\Api\Data\EntityInterface;
 use Websolute\TransporterEntity\Model\EntityModel;
@@ -32,7 +32,7 @@ use Websolute\TransporterTeamSystemAdaptor\Model\GetLastChangeDateTimeByActivity
 use Websolute\TransporterTeamSystemAdaptor\Model\TeamSystemConfig;
 use Zend\Http\Response;
 
-class TeamSystemWebJsonDownloader implements DownloaderWaitMeBeforeContinueInterface
+class TeamSystemWebJsonDownloader implements DownloaderInterface
 {
     /**
      * @var Logger
