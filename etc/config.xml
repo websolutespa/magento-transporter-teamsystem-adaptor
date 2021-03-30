@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © Websolute spa. All rights reserved.
+  ~ See LICENSE and/or COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <transporter_teamsystem>
+            <general>
+                <webservice_unsercure_certificate>0</webservice_unsercure_certificate>
+                <client_timeout>60</client_timeout>
+                <fallback_last_change_datetime>2016-01-01 00:00:01</fallback_last_change_datetime>
+            </general>
+        </transporter_teamsystem>
+    </default>
+</config>

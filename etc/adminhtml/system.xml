@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © Websolute spa. All rights reserved.
+  ~ See LICENSE and/or COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="transporter_teamsystem" translate="label" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>TeamSystem</label>
+            <tab>transporter</tab>
+            <resource>Websolute_TransporterBase::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="webservice_url" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice url</label>
+                </field>
+                <field id="webservice_username" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice username</label>
+                </field>
+                <field id="webservice_password" translate="label" type="password" sortOrder="32" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice password</label>
+                </field>
+                <field id="webservice_response_compressed" translate="label" type="select" sortOrder="35" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice response compressed</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="webservice_unsercure_certificate" translate="label" type="select" sortOrder="35" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice unsecure certificate</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="client_timeout" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Client timeout (in seconds)</label>
+                </field>
+                <field id="fallback_last_change_datetime" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Fallback last change datetime</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
