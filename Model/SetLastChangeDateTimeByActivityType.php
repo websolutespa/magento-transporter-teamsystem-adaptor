@@ -30,7 +30,7 @@ class SetLastChangeDateTimeByActivityType
      * @param AlyanteDataModelFactory $alyanteDataModelFactory
      * @param AlyanteDataResourceModel $alyanteDataResourceModel
      */
-    public function __construct(
+    public function __construct (
         AlyanteDataModelFactory $alyanteDataModelFactory,
         AlyanteDataResourceModel $alyanteDataResourceModel
     ) {
@@ -43,9 +43,9 @@ class SetLastChangeDateTimeByActivityType
      * @param DateTime $lastChange
      * @throws AlreadyExistsException
      */
-    public function execute(string $activityType, DateTime $lastChange)
+    public function execute (string $activityType, DateTime $lastChange)
     {
-        $lastChange->sub(new DateInterval('PT1S'));
+        $lastChange->add(new DateInterval('PT1S'));
 
         $alyanteDataLastChange = $this->alyanteDataModelFactory->create();
         $key = GetLastChangeDateTimeByActivityType::LAST_CHANGE_TOKEN . '_' . $activityType;
